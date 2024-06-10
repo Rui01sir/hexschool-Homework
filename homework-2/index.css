@@ -614,18 +614,19 @@ button p{
 }
 
 .window-body{
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 17%;
-    padding-right: 17%;
+    margin-left: 17%;
+    margin-right: 17%;
     background-color: #FAFAFA;
     border-radius: 0px 0px 16px 16px;
 }
 
 .window-box{
-    width: 100%;
+    width: 70%;
+    padding-top: 80px;
 }
 
 .window-box2{
@@ -697,10 +698,12 @@ button p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 5%;
-        padding-right: 5%;
         background-color: #FAFAFA;
         border-radius: 0px 0px 16px 16px;
+    }
+
+    .window-box{
+        padding-top: 40px;
     }
     
     .window-body img {
