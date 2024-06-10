@@ -9,7 +9,8 @@
     <title>Noel</title>
 </head>
 <body>
-    <!-- navbar -->
+
+    <!-- 導覽列 -->
     <nav>
         <div>
             <div class="navbar"> 
@@ -29,24 +30,44 @@
 
         </div>
     </nav>
+
     <!-- 內容  -->
-    <div class="box-1">
-        <div class="box-2">
-        <div class="quoteicon">
-            <img src="./img/quote.svg" alt="quote">
+    <div class="text-1">
+            <div class="text-2">
+            <div class="quoteicon">
+                <img src="./img/quote-left.png" alt="quote">
+            </div>
+            <div class="text-3">
+                <h4>讓使用者在觀賞與使用的旅程中，發現設計的價值</h4>
+                <h4>而我在設計與開發的過程中，看見自己的價值</h4>
+            </div>
+            <div class="text-4">
+            <div class="quoteicon-2">
+                <img src="./img/quote-right.png" alt="quote">
+            </div>
         </div>
-        <div class="box-3">
-            <h4>讓使用者在觀賞與使用的旅程中，發現設計的價值</h4>
-            <h4>而我在設計與開發的過程中，看見自己的價值</h4>
         </div>
-        <div class="box-4">
-        <div class="quoteicon-2">
-            <img src="./img/quote.svg" alt="quote">
+        <div class="text-7">
+            <div class="text-5">
+                <div class="text-6">
+                    <p>2B經驗</p>
+                    <div class="line"></div>
+                </div>
+                <p>內部監控系統、庫存系統、採購系統、行銷整合系統</p>
+            </div>
+            <div class="text-5">
+                <div class="text-6">
+                    <p>2B經驗</p>
+                    <div class="line"></div>
+                </div>
+                <p>內部監控系統、庫存系統、採購系統、行銷整合系統</p>
+            </div>
         </div>
     </div>
+
     <!-- 圖卡 -->
     <div class="box-1">
-        <div class="box-2">
+        <div class="box-2" id="clickableDiv">
             <img src="./img/work-image1.png" alt="article-image1">
             <div class="box-3">
                 <h1>星際旅行訂票平台</h1>
@@ -155,8 +176,86 @@
             </div>
         </div>
     </div>
+
+    <!-- 目錄 -->
+    <div class="button-1">
+        <div class="button-2">
+            <p>1</p>
+        </div>
+        <div class="button-2">
+            <p>2</p>
+        </div>
+        <div class="button-2">
+            <p>3</p>
+        </div>
     </div>
+
+    <!-- 頁尾 -->
+    <footer>
+        <div class="footer-1">
+            <div class="footer-2">
+                <div class="footer-3">
+                    <img src="./img/logo.svg" alt="logo" class="footer-logo">
+                    <p>若有數位產品設計和開發相關問題</p>
+                    <p>歡迎填寫表單，或直接與我聯絡！</p>
+                    <h5 class="email">service@hexschool.com</h5>
+                </div>
+                <div class="footer-3">
+                    <button class="list-btn">
+                        <img src="./img/list.svg" alt="list-icon">
+                        <p>填寫表單</p>
+                    </button>
+                    <button class="ig-btn">
+                        <img src="./img/instagram.svg" alt="instagram-icon">
+                        <p>hexschool_demo</p>
+                    </button>
+                    <button class="fb-btn">
+                        <img src="./img/facebook.svg" alt="facebook-icon">
+                        <p>hexschoolTW</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 浮動視窗 -->
+    <div id="window" class="window">
+        <div class="window-content">
+            <span class="close-button" style="color: black;">&times;</span>
+            <div class="window-text1">
+                <h3>星際旅行訂票平台</h3>
+                <p>悠遊宇宙的夢想，從這裡開始實現</p>
+            </div>
+            <div class="window-text2">
+                <div class="window-text3">
+                    <p>STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。
+                        主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建置完畢，將再擴增目的地土星和金星。</p>
+                </div>
+                <div class="window-line"></div>
+                <div class="window-text4">
+                    <p>設計原則：宇宙旅行、深色背景、強烈視覺效果</p>
+                    <p>開發方式：Bootstrap、Javascript、RWD </p>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="window-box">
+                    <img src="./img/modal-image1.png" alt="modal-image1" />
+                    <div class="window-box2" >
+                        <h3>主視覺</h3>
+                        <p>可進行火星之旅、衛星環繞、月球漫步、以及深空探險等旅遊選項。</p>
+                    </div>
+                </div>
+                <div class="window-box">
+                    <img src="./img/modal-image2.png" alt="modal-image2" />
+                    <div class="window-box2">
+                        <h3>搭乘資訊</h3>
+                        <p>近期飛行資訊，以及熱門目的地。請選擇行程以開始您的太空旅程。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <!-- javascript -->
     <script>
@@ -171,6 +270,19 @@
                 humburger.classList.toggle("active");
                 barsIcon.style.display = barsIcon.style.display === 'none' ? '' : 'none';
                 xMarkIcon.style.display = xMarkIcon.style.display === 'none' ? '' : 'none';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById("clickableDiv").addEventListener("click", function() {
+            document.getElementById("window").style.display = "flex";
+        });
+        document.querySelector(".close-button").addEventListener("click", function() {
+            document.getElementById("window").style.display = "none";
+        });
+        window.addEventListener("click", function(event) {
+            if (event.target === document.getElementById("window")) {
+                document.getElementById("window").style.display = "none";
             }
         });
     </script>
