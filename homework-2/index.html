@@ -205,11 +205,11 @@
                         <img src="./img/list.svg" alt="list-icon">
                         <p>填寫表單</p>
                     </button>
-                    <button class="ig-btn">
+                    <button class="ig-btn" id="myigButton">
                         <img src="./img/instagram.svg" alt="instagram-icon">
                         <p>hexschool_demo</p>
                     </button>
-                    <button class="fb-btn">
+                    <button class="fb-btn" id="myfbButton">
                         <img src="./img/facebook.svg" alt="facebook-icon">
                         <p>hexschoolTW</p>
                     </button>
@@ -273,17 +273,39 @@
             }
         });
     </script>
+
+    <script>
+        document.getElementById("myigButton").addEventListener("click", function() {
+            window.location.href = "https://www.instagram.com/hexschool/";
+        });
+        document.getElementById("myfbButton").addEventListener("click", function() {
+            window.location.href = "https://www.facebook.com/hexschool/?locale=zh_TW";
+        });
+    </script>
+
     <script>
         document.getElementById("clickableDiv").addEventListener("click", function() {
-            document.getElementById("window").style.display = "flex";
+            document.getElementById("window").style.display = "block";
+            document.querySelector(".overlay").style.display = "block";
+            document.body.style.overflow = "hidden";
         });
+
         document.querySelector(".close-button").addEventListener("click", function() {
             document.getElementById("window").style.display = "none";
+            document.querySelector(".overlay").style.display = "none";
+            document.body.style.overflow = "";
         });
+
         window.addEventListener("click", function(event) {
-            if (event.target === document.getElementById("window")) {
+            if (event.target === document.querySelector(".overlay")) {
                 document.getElementById("window").style.display = "none";
+                document.querySelector(".overlay").style.display = "none";
+                document.body.style.overflow = "";
             }
+        });
+
+        document.getElementById("window").addEventListener("wheel", function(event) {
+            event.stopPropagation();
         });
     </script>
 </body>
